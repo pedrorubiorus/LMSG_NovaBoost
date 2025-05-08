@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    font-family: "Lora", serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: black;
+
+}
+
+header {
+    display: flex;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: white;
+}
+
+header img{
+    width: 250px;
+    height: 200px;
+}
+
+header nav{
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li{
+    list-style: none;
+    margin-left: 40px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 400;
+    padding: 10px;
+    transition: 0.3s;
+    font-family: "Cal Sans", sans-serif;;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+header nav li a:hover {
+    border-bottom: 5px solid black;
+    padding: 2px;
+    color: white;
+    background: black;
+    transition: 0.8s;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    color: white;
+}
+
+main h2{
+    font-size: 6em;
+    text-transform: uppercase;
+    color: white
+}
+
+main .textoP p{
+
+    font-size: 2em;
+    line-height: 1.5;
+    color: white;
+    font-family: "Cal Sans",sans-serif;
+    font-weight: 200px;
+    margin-bottom: 20px;
+}
+
+main .textoP li{
+
+    font-size: 2em;
+    line-height: 1.5;
+    color: white;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200px;
+    margin-bottom: 20px;
+}
