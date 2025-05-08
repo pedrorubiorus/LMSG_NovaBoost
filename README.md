@@ -19,6 +19,7 @@ Este proyecto ha sido desarrollado como parte de la Actividad 3 de la asignatura
 
 La organización de carpetas y archivos del sitio es la siguiente:
 
+```text
 /novaboost
 ├── index.html                 → Página principal (Home)
 ├── /css
@@ -29,6 +30,7 @@ La organización de carpetas y archivos del sitio es la siguiente:
 │   ├── quienes-somos.html     → Información de la empresa
 │   └── contacto.html          → Formulario de contacto
 └── README.md                  → Este documento
+```
 
 
 ---
