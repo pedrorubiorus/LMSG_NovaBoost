@@ -100,3 +100,110 @@ main .textoP li{
     font-weight: 200px;
     margin-bottom: 20px;
 }
+
+/*EUKEN*/
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c6bdbd;
+    color: #333;
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  
+  h2 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  
+  /*ÁREAS DE ACTUACIÓN*/
+  #servicios p {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .servicios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .servicio {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /*QUIÉNES SOMOS*/
+  #quienes-somos {
+    background-color: #ecf0f1;
+  }
+  
+  .somos-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .somos-texto {
+    flex: 1 1 300px;
+    max-width: 500px;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .somos-img {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+  
+  .somos-img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* WEBS RESPONSIVE */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2em;
+    }
+  
+    .servicios-grid, .somos-contenido {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .servicio, .somos-texto, .somos-img {
+      max-width: 100%;
+    }
+  }
