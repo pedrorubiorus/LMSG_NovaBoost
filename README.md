@@ -8,10 +8,10 @@ Este proyecto ha sido desarrollado como parte de la Actividad 3 de la asignatura
 
 ## 👥 Integrantes del grupo
 
-- **Pedro Rubio** – Estructura HTML y página de inicio (Home).
-- **Adrian I. Perez** – Formulario de contacto y menú desplegable CSS.
-- **Euken Saez** – Contenido de páginas internas.
-- **Javier Garcia** – Responsive design para distintos dispositivos, subida a GitHub Pages y documentación final (PDF).
+- **Pedro Rubio Rus** – Estructura HTML y página de inicio (Home).
+- **Adrian I. Pérez** – Formulario de contacto y menú desplegable CSS.
+- **Euken Sáez Rodríguez** – Contenido de páginas internas.
+- **Javier García Ruiz** – Responsive design para distintos dispositivos, subida a GitHub Pages y documentación final (PDF).
 
 ---
 
