@@ -25,7 +25,7 @@ La organización de carpetas y archivos del sitio es la siguiente:
 ├── /css
 │   └── style.css              → Estilos generales
 ├── /img                       → Imágenes del sitio
-├── /pages
+├── /html
 │   ├── servicios.html         → Página de servicios / áreas de actuación
 │   ├── quienes-somos.html     → Información de la empresa
 │   └── contacto.html          → Formulario de contacto
