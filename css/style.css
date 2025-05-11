@@ -1,69 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-*{
-    font-family: "Lora", serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
+* {
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: black;
-
+body {
+  background: black;
+  color: white;
 }
+
+/* ---------------- HEADER ---------------- */
 
 header {
-    display: flex;
-    width: auto;
-    height: 200px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  gap: 20px;
 }
 
-header img{
-    width: 250px;
+header img {
+   width: 250px;
     height: 200px;
 }
 
-header nav{
-    position: relative;
-    align-items: center;
-    display: flex;
+header nav {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
 }
 
-header nav li{
-    list-style: none;
-    margin-left: 40px;
+ul {
+  list-style: none;
+  text-align: center;
 }
 
-header nav li a{
-    text-decoration: none;
-    color:black;
-    font-weight: 400;
-    padding: 10px;
-    transition: 0.3s;
-    font-family: "Cal Sans", sans-serif;
-    font-size: 1em;
-    text-transform: uppercase;
+/* ---------------- MENÚ ---------------- */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+.menu > li {
+  position: relative;
 }
 
-header nav li a:hover {
-    border-bottom: 5px solid black;
-    padding: 2px;
-    color: white;
-    background: black;
-    transition: 0.8s;
+.menu a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Cal Sans", sans-serif;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 1.25em;
 }
+
+.menu a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Submenú */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background-color: white;
+  padding: 20px 0;
+  box-shadow: 0px 4px 8px skyblue;
+  min-width: 220px;
+  z-index: 999;
+  border-radius: 10px;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+/* ---------------- MAIN ---------------- */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+main h2 {
+  font-size: 6em;
+  text-transform: uppercase;
+  color: white;
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+main .textoP {
+  flex: 1 1 60%;
+  text-align: center;
+}
+
+main .textoP p,
+main .textoP li {
+  font-size: 2em;
+  line-height: 1.5;
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -72,20 +143,17 @@ header nav li a:hover {
   padding: 40px;
   gap: 40px;
 }
-
 .hero-text {
   flex: 1 1 500px;
   color: white;
   font-family: "Cal Sans",sans-serif;;
   font-size: 1.7em;
 }
-
 .hero-text h2 {
   font-size: 5em;
   margin-bottom: 10px;
   color: white;
 }
-
 .hero-img {
   flex: 1 1 400px;
   text-align: center;
@@ -99,302 +167,368 @@ header nav li a:hover {
 .hero-text h2 {
   font-size: 3em;
 }
-
 .hero .textoP a {
   color: black;
   background-color: white;
-  padding: 10px 18px;
+  padding: 4px 6px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
-  .hero-text h2 {
-    font-size: 3em;
-  }
- 
-
-  .hero-img {
-    margin-top: 20px;
-  }
-}
+/* ---------------- FOOTER ---------------- */
 
 footer {
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    font-family: "Lora", serif;
-    margin-top: 40px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-family: "Lora", serif;
+  margin-top: 40px;
 }
 
-/* ---------------- */
-/* Menú desplegable */
-/* ---------------- */
+/* ---------------- FORMULARIO ---------------- */
 
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    position: relative;
-}
-  
-.menu > li {
-    position: relative;
-}
-  
-.menu a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-family: "Cal Sans", sans-serif;
-    transition: 0.3s;
-}
-  
-.menu a:hover {
-    background-color: black;
-    color: white;
-}
-  
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    background-color: white;
-    padding: 20px 0;
-    box-shadow: 0px 4px 8px skyblue;
-    min-width: 220px;
-    z-index: 999;
-    border-radius: 10px;
-}
-  
-.menu li:hover > .submenu {
-    display: block;
-}
-  
-.submenu li a {
-    padding: 10px 20px;
-    color: black;
-    text-decoration: none;
-    display: block;
-    font-weight: normal;
-    border-radius: 10px;
-}
-  
-/* ---------- */
-/* FORMULARIO */
-/* ---------- */
-  
 main.contacto-main {
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    background-color: black;
-    z-index: 1;
-    position: relative;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: black;
+  z-index: 1;
+  position: relative;
 }
-  
+
 .contacto {
-    background: white;
-    color: black;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 600px;
-    width: 100%;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  background: white;
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
-  
+
 .contacto h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    font-family: "Cal Sans", sans-serif;
-    color: black;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: "Cal Sans", sans-serif;
+  color: black;
 }
-  
+
 .contacto form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-  
+
 .contacto fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
-  
+
 .contacto legend {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
 }
-  
+
 .contacto label {
-    display: block;
-    margin-top: 10px;
-    font-weight: 500;
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
 }
-  
+
 .contacto input, .contacto select, .contacto textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 1em;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
 }
-  
+
 .contacto input[type="radio"], .contacto input[type="checkbox"] {
-    width: auto;
-    margin-right: 5px;
+  width: auto;
+  margin-right: 5px;
 }
-  
+
 .contacto button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
-  
+
 .contacto button:hover {
-    background-color: #333;
+  background-color: #333;
 }
 
 .botones-form {
-    display: flex;
-    gap: 10px;
-    justify-content: center; /* centra los botones */
-    margin-top: 20px;
-  }
-  
-  .botones-form button {
-    flex: 1; /* para que tengan mismo ancho, opcional */
-  }
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.botones-form button {
+  flex: 1;
+}
+
+/* ---------------- QUIÉNES SOMOS / SERVICIOS ---------------- */
+
+body.quienes,
+body.servicios {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #c6bdbd;
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#quienes-somos h2,
+#servicios h2 {
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#quienes-somos h3,
+#servicios h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+#servicios p {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.servicios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.servicio {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#quienes-somos {
+  background-color: #ecf0f1;
+}
+
+.somos-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.somos-texto {
+  flex: 1 1 300px;
+  max-width: 500px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.somos-img {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.somos-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: black;
+  z-index: 1001;
+}
 
 
-/*EUKEN*/
+/* ---------------- RESPONSIVE ---------------- */
 
-body.quienes, body.servicios {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #c6bdbd;
-    color: #333;
-  }
-  
-  section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  
-  #quienes-somos h2, #servicios h2 {
-    text-align: center;
-    font-size: 2.8em;
-    margin-bottom: 20px;
-    color: #2c3e50;
-  }
-  
-  #quienes-somos h3, #servicios h3 {
-    margin-top: 0;
-    font-size: 1.5em;
-  }
-  
-  /*ÁREAS DE ACTUACIÓN*/
-  #servicios p {
-    text-align: center;
-    max-width: 700px;
-    margin: auto;
-    font-size: 1.1em;
-    color: #555;
-  }
-  
-  .servicios-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-  }
-  
-  .servicio {
-    flex: 1 1 250px;
-    max-width: 300px;
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .servicio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  /*QUIÉNES SOMOS*/
-  #quienes-somos {
-    background-color: #ecf0f1;
-  }
-  
-  .somos-contenido {
-    display: flex;
-    flex-wrap: wrap;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
+    padding: 20px;
   }
-  
-  .somos-texto {
-    flex: 1 1 300px;
-    max-width: 500px;
-    font-size: 1.1em;
-    line-height: 1.6;
+
+  header img {
+    max-width: 150px;
+    height: auto;
   }
-  
-  .somos-img {
-    flex: 1 1 300px;
-    max-width: 400px;
+
+  .menu-icon {
+    display: block;
   }
-  
-  .somos-img img {
+
+  nav .menu {
+    display: none;
+    flex-direction: column;
     width: 100%;
-    border-radius: 10px;
+    background-color: white;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
   }
-  
-  /* WEBS RESPONSIVE */
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 2em;
+
+  #menu-toggle:checked ~ nav .menu {
+    display: flex;
+  }
+
+  .menu li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu a {
+    padding: 15px;
+    border-top: 1px solid #eee;
+  }
+
+  .submenu {
+    position: static;
+    box-shadow: none;
+    background-color: white;
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+  main h2 {
+    font-size: 2em;
+  }
+
+  main .textoP p,
+  main .textoP li {
+    font-size: 1.2em;
+  }
+
+  header img {
+    max-width: 180px;
+  }
+
+  @media (min-width: 1300px) {
+    body {
+      font-size: 18px;
+      padding: 0 60px;
     }
-  
-    .servicios-grid, .somos-contenido {
-      flex-direction: column;
-      align-items: center;
+
+    header {
+      padding: 40px 100px;
+      gap: 40px;
     }
-  
-    .servicio, .somos-texto, .somos-img {
-      max-width: 100%;
+
+    header img {
+      width: 320px;
+      height: auto;
+    }
+
+    .menu a {
+      font-size: 1.5em;
+      padding: 15px 25px;
+    }
+
+    main {
+      padding: 60px 40px;
+    }
+
+    main h2 {
+      font-size: 7em;
+    }
+
+    main .textoP p,
+    main .textoP li {
+      font-size: 2.4em;
+    }
+
+    aside {
+      padding: 40px;
+    }
+
+    footer {
+      font-size: 1.2em;
+      padding: 30px 100px;
+    }
+
+    .contacto {
+      max-width: 900px;
+      padding: 50px;
+    }
+
+    .contacto h2 {
+      font-size: 2.5em;
+    }
+
+    #quienes-somos h2,
+    #servicios h2 {
+      font-size: 3.5em;
+    }
+
+    #servicios p {
+      font-size: 1.3em;
+    }
+
+    .servicio {
+      max-width: 350px;
+      padding: 30px;
+    }
+
+    .somos-texto {
+      font-size: 1.3em;
+      max-width: 600px;
+    }
+
+    .somos-img {
+      max-width: 500px;
+    }
+
+    .servicios-grid {
+      gap: 50px;
+    }
+
+    .botones-form button {
+      font-size: 1.1em;
+      padding: 15px 30px;
     }
   }
+}
