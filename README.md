@@ -81,4 +81,5 @@ El grupo se organizó repartiendo las partes de la actividad según los requerim
 ## 🔗 Hosting del proyecto
 
 El proyecto está desplegado en:  
-GithubPages *
+https://pedrorubiorus.github.io/LMSG_NovaBoost/index.html
+
